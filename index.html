@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Dear Kishmish 🎀💜</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- STEP 1 -->
+<div id="step1" class="step">
+  <h1>🎀 My Dear Kishmish 💜</h1>
+  <p>New Year surprise loading... ✨</p>
+  <button class="btn" id="startBtn">Continue 🎁</button>
+</div>
+
+<!-- STEP 2 -->
+<div id="step2" class="step hidden">
+  <h2>🎆 Ready ho, My Dear Kishmish? 💜</h2>
+  <p>Is naye saal ki shuruaat ek bohot special smile ke saath 😌🎀</p>
+
+  <div id="catBox" class="cat-box">
+    <div class="cat-card">
+      <img src="cat-yes.png" alt="Yes Cat">
+      <button class="btn" id="yesBtn">YES 💜</button> <!-- REMOVED onclick -->
+    </div>
+    <div class="cat-card">
+      <img src="cat-no.png" alt="No Cat">
+      <button class="btn" id="noBtn">NO 😼</button>
+    </div>
+  </div>
+  <p id="catMsg"></p>
+</div>
+
+<!-- NO FUN SCREEN -->
+<div id="noScreen" class="hidden">
+  <p id="noText">😼 Arey… sach me NO?<br>Thoda sa soch lo na 💜</p>
+  <div class="no-btns">
+    <button class="btn" id="rethinkBtn">🔁 Rethink</button>
+    <button class="btn" id="stillNoBtn">😹 Still NO</button>
+  </div>
+</div>
+
+<!-- HEARTS RAIN -->
+<div id="heartsRain" class="hidden"></div>
+
+<!-- ENVELOPE SCREEN -->
+<div id="envelopeScreen" class="hidden">
+  <p>💌 One last thing…<br>I wrote this just for you</p>
+  <div id="envelope">✉️</div>
+  <p>Tap to open</p>
+</div>
+
+<!-- FINAL LETTER -->
+<div id="finalMessage"></div>
+
+<!-- SPECIAL PROMPT -->
+<div id="specialPrompt" class="hidden">
+  <p>Wanna see something special? 💜</p>
+  <button class="btn" id="specialBtn">Yes ✨</button>
+</div>
+
+<!-- PHOTO REVEAL -->
+<div id="photoReveal" class="hidden">
+  <img src="photo1.jpg" class="reveal-photo" alt="Photo 1">
+  <img src="photo2.jpg" class="reveal-photo" alt="Photo 2">
+  <img src="photo3.jpg" class="reveal-photo" alt="Photo 3">
+</div>
+
+<!-- BACKGROUND SONG -->
+<audio id="bgSong" src="song.mp3" preload="metadata"></audio>
+
+<!-- HAPPY NEW YEAR POPUP -->
+<div id="newYearPopup" class="ny-popup">
+  <div class="ny-box">
+    <h1>🎆 HAPPY NEW YEAR 🎆</h1>
+    <h2>My Dear Kishmish 🎀💜</h2>
+    <p>May this year bring endless smiles, peace & love ✨</p>
+    <button class="btn" id="closePopup">💜</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
